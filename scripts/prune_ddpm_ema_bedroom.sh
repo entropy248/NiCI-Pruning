@@ -1,0 +1,11 @@
+python ddpm_prune.py \
+--dataset data/bedroom \
+--model_path pretrained/ddpm_bedroom \
+--save_path run/pruned/ddpm_ema_bedroom_256_pruned_c2c_iter400_powerstep \
+--pruning_ratio 0.3 \
+--batch_size 12 \
+--pruner c2c \
+--iter_num 400 \
+--step 1 \
+--thr 0.00 \
+--device cuda:4

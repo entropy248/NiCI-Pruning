@@ -1,0 +1,9 @@
+python ldm_prune.py \
+--dataset data/celeba_hq \
+--model_path CompVis/ldm-celebahq-256 \
+--save_path run/pruned/ldm-celebahq-256 \
+--pruning_ratio 0.3 \
+--batch_size 4 \
+--pruner diff-pruning \
+--thr 0.05 \
+--device cuda:4 \

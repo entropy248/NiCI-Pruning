@@ -1,0 +1,10 @@
+python ddpm_prune.py \
+--dataset cifar10 \
+--model_path pretrained/ddpm_ema_cifar10/ddpm_ema_cifar10 \
+--save_path run/pruned/ddpm_cifar10_pruned_dp+c2c_thr5_iter10_step10 \
+--iter_num 10 \
+--pruning_ratio 0.3 \
+--batch_size 128 \
+--pruner c2c \
+--thr 0.00 \
+--device cuda:4 \

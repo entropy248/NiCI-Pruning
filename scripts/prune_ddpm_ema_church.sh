@@ -1,0 +1,11 @@
+python ddpm_prune.py \
+--dataset data/church \
+--model_path pretrained/ddpm_church \
+--save_path run/pruned/ddpm_church_256_pruned_c2c_iter1_poweriter \
+--pruning_ratio 0.3 \
+--batch_size 8 \
+--pruner c2c \
+--thr 0.3 \
+--iter_num 1 \
+--step 1 \
+--device cuda:4 \
